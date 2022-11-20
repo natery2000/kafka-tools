@@ -1,0 +1,16 @@
+{
+  "name": "Log",
+  "type": "record",
+  "namespace": "log",
+  "fields": [
+    {
+      "name": "first",
+      "type": "string",
+    },
+  "fields": [
+    {
+      "name": "second",
+      "type": "string",
+    },
+  ]
+}

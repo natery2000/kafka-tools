@@ -1,0 +1,47 @@
+{
+  "name": "Log",
+  "type": "record",
+  "namespace": "log",
+  "fields": [
+    {
+      "type": {
+        "name": "CommonField",
+        "type": "record",
+        "namespace": null,
+        "fields": [
+          {
+            "name": "firstCommonField",
+            "type": "string"
+          }
+        ]
+      },
+      "name": "CommonFields"
+    },
+    {
+      "type": {
+        "name": "CustomField",
+        "type": "record",
+        "namespace": null,
+        "fields": [
+          {
+            "name": "posLoggingKey",
+            "type": "string"
+          },
+          {
+            "type": {
+              "values": [
+                "null",
+                "string",
+                "boolean",
+                "int"
+              ],
+              "type": "map"
+            },
+            "name": "monitoringFields"
+          }
+        ]
+      },
+      "name": "CustomFields"
+    }
+  ]
+}
